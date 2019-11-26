@@ -12,10 +12,12 @@ public class CardTest5 {
 		for(int i=0; i<3; i++) {
 			dealer.saveCard(cd.pick());
 			gamer.saveCard(cd.pick());
-		}
-		
+		}		
 		dealer.showCards();
 		gamer.showCards();
+		
+		Rule rule = new Rule();
+		rule.whoIsWin(dealer, gamer);
 
 	}
 
