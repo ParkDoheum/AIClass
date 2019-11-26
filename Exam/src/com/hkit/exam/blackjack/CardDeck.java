@@ -41,6 +41,7 @@ public class CardDeck {
 		}
 	}
 	
+	
 	public Card pick() {
 		Card c = null;
 		for(int i=0; i<cards.length; i++) {
@@ -52,6 +53,20 @@ public class CardDeck {
 		}
 		return c;
 	}
+	
+	public Card pickRandom() {
+		Card c = null;
+		while(c == null) {
+			int r = (int)(Math.random() * cards.length);
+			if(cards[r] != null) {
+				c = cards[r];
+				cards[r] = null;
+				break;
+			}
+		}		
+		return c;
+	}
+	
 	
 	public void shuffle() {
 		for(int i=0; i<cards.length; i++) {
