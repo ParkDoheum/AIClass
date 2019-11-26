@@ -27,18 +27,18 @@ public class CardDeck {
 		
 	}
 	
-	public void showCards() {
-		/*
+	public void showCards() {		
 		for(Card c : cards) {
 			System.out.println(c);
 		}
-		*/
+		/*
 		for(int i=0; i<cards.length; i++) {
 			Card c = cards[i];
 			if(c != null) {
 				c.showMe();
 			}			
 		}
+		*/
 	}
 	
 	
@@ -60,8 +60,7 @@ public class CardDeck {
 			int r = (int)(Math.random() * cards.length);
 			if(cards[r] != null) {
 				c = cards[r];
-				cards[r] = null;
-				break;
+				cards[r] = null;				
 			}
 		}		
 		return c;
