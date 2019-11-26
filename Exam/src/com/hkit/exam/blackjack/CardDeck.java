@@ -37,8 +37,7 @@ public class CardDeck {
 			Card c = cards[i];
 			if(c != null) {
 				c.showMe();
-			}
-			
+			}			
 		}
 	}
 	
@@ -53,6 +52,16 @@ public class CardDeck {
 		}
 		return c;
 	}
+	
+	public void shuffle() {
+		for(int i=0; i<cards.length; i++) {
+			int r = (int)(Math.random() * cards.length);			
+			Card temp = cards[i];
+			cards[i] = cards[r];
+			cards[r] = temp;
+		}
+	}
+	
 }
 
 

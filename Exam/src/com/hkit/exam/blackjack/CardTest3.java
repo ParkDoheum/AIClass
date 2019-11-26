@@ -1,11 +1,17 @@
 package com.hkit.exam.blackjack;
 
 public class CardTest3 {
-	public static void main(String[] ㅣㅣㅣㅣㅣ) {
-		CardDeck cd = new CardDeck();
-		Card c = cd.pick();
-		System.out.println("c : " + c);
+	public static void main(String[] args) {
+		//Math.random() //0~0.9999999999999999999
 		
-		cd.showCards();		
+		int r = (int)(Math.random() * 52); //0~51
+		System.out.println(r);
+		/*
+		CardDeck cd = new CardDeck();
+		for(int i=0; i<50; i++) {
+			cd.pick();
+		}		
+		cd.showCards();
+		*/		
 	}
 }

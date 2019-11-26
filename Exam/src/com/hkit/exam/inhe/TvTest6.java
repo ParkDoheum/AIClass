@@ -8,19 +8,12 @@ public class TvTest6 {
 	
 		printWhoAmI(sTV);
 		printWhoAmI(msTV);
-		printWhoAmI(lTv);		
+		TvTest6.printWhoAmI(lTv);		
 	}
 	
 	public static void printWhoAmI(Tv sTV) {
 		sTV.whoAmI();
 	}
-
-	
-	
-	
-	
-	
-	
 	
 }
 
