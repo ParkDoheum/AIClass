@@ -1,11 +1,29 @@
 package com.hkit.exam.inhe;
 
 public class TvTest6 {
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		SamsungTV sTV = new SamsungTV();		
-		sTV.whoAmI();
-
 		MiniSamsungTv msTV = new MiniSamsungTv();
-		msTV.whoAmI();
+		LGTv lTv = new LGTv();
+	
+		printWhoAmI(sTV);
+		printWhoAmI(msTV);
+		printWhoAmI(lTv);		
 	}
+	
+	public static void printWhoAmI(Tv sTV) {
+		sTV.whoAmI();
+	}
+
+	
+	
+	
+	
+	
+	
+	
 }
+
+
+
+
