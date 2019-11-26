@@ -7,8 +7,7 @@ public class Card {
 	public Card() {		
 	}
 	
-	public Card(int no, String shape) {
-		
+	public Card(int no, String shape) {		
 		this.no = no;
 		this.shape = shape;
 	}
@@ -16,6 +15,10 @@ public class Card {
 	public Card(int no) {
 		
 		this.no = no;
+	}
+	
+	public void showMe() {
+		System.out.println("shape : " + this.shape + ", no : " + this.no);
 	}
 	
 	@Override
