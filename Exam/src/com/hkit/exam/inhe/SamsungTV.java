@@ -1,6 +1,6 @@
 package com.hkit.exam.inhe;
 
-public class SamsungTV extends Tv{
+public class SamsungTV extends Tv {
 	@Override
 	public void whoAmI() {
 		System.out.println("SamsungTV 입니다.");

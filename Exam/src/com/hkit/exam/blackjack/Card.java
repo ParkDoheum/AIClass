@@ -1,6 +1,6 @@
 package com.hkit.exam.blackjack;
 
-public class Card extends Object {
+public class Card {
 	String shape;
 	int no; //1~13
 	
