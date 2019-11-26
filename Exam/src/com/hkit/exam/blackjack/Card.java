@@ -8,13 +8,13 @@ public class Card extends Object {
 	}
 	
 	public Card(int no, String shape) {
-		this();
+		
 		this.no = no;
 		this.shape = shape;
 	}
 	
 	public Card(int no) {
-		this();
+		
 		this.no = no;
 	}
 	

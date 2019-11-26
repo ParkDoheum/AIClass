@@ -14,8 +14,13 @@ public class CardTest2 {
 				cards[cardsIdx++] = new Card(z, shapes[i]);
 			}
 		}		
-		
+		/*
 		for(Card c : cards) {
+			System.out.println(c);
+		}
+		*/
+		for(int i=0; i<cards.length; i++) {
+			Card c = cards[i];
 			System.out.println(c);
 		}
 
