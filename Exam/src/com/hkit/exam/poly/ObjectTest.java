@@ -19,9 +19,8 @@ public class ObjectTest {
 		
 		c.printB();
 		c.printC();
-		 */		
+		 */
 		
-	
 		print(new ObjectA());
 		print(new ObjectB());
 		print(new ObjectC());		
