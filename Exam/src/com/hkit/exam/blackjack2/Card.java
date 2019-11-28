@@ -31,4 +31,21 @@ public class Card {
 		
 		this.intNo = intNo; 
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("%s %s %d", shape, showNo, intNo);
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
