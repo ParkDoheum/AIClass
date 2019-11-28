@@ -20,14 +20,20 @@ public class ObjectTest {
 		c.printB();
 		c.printC();
 		 */		
+		
 	
 		print(new ObjectA());
 		print(new ObjectB());
-		print(new ObjectC());
-		
+		print(new ObjectC());		
 	}
-	
 	public static void print(ObjectA obj) {
+		if(obj instanceof ObjectC) {
+			ObjectC c = (ObjectC)obj;
+			c.printC();
+			return;
+		}
 		obj.printA();
 	}
 }
+
+
