@@ -18,6 +18,13 @@ public class CardDeck {
 		}
 	}
 	
+	public Card pick() {
+		int r = (int)(Math.random() * list.size());		
+		Card c = list.get(r);
+		list.remove(r);
+		return c;
+	}
+	
 	public void showCards() {
 		for(Card c : list) {
 			System.out.println(c);
