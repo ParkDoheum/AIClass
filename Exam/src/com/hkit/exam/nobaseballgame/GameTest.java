@@ -6,11 +6,9 @@ public class GameTest {
 		
 		if(args[0] != null) {
 			len = Utils.paseNumber(args[0], len);
-		}		
-		
-		System.out.println("len : " + len);
-		
-		//Game game = new Game(len);
-
+		}				
+		System.out.println("len : " + len);		
+		Game game = new Game(len);
+		game.start();
 	}
 }
