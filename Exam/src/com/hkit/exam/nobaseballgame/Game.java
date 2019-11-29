@@ -12,6 +12,7 @@ public class Game {
 	}
 	
 	public void start() {
+		Scanner scan = new Scanner(System.in);
 		setRandoms2();
 		
 		System.out.println("랜덤값");
@@ -20,15 +21,12 @@ public class Game {
 		}
 		System.out.println();
 		
-		Scanner scan = new Scanner(System.in);
+		
 		System.out.println("숫자를 입려해주세요.");
 		for(int i=0; i<myArray.length; i++) {
 			System.out.printf("숫자 %d : ", (i+1));
 			myArray[i] = scan.nextInt();
-		}
-		
-		
-		
+		}		
 		check();
 		
 		scan.close();
@@ -36,8 +34,8 @@ public class Game {
 		
 	}
 	
-	//SBO 확인용
-	public void check() {
+	//SBO 확인용 (true: 게임지속, false: 게임종료)
+	public boolean check() {
 		int s = 0, b = 0;
 		int len = rArray.length;
 		for(int i=0; i<len; i++) {
@@ -53,6 +51,10 @@ public class Game {
 			}
 		}		
 		System.out.printf("S:%d  B:%d  O:%d\n", s, b, (len - (s + b)));
+		if(len == s) {
+			return false;
+		}
+		return true;
 	}
 	
 	public void setRandoms2() {
