@@ -1,5 +1,7 @@
 package com.hkit.exam.nobaseballgame;
 
+import java.util.Scanner;
+
 public class Game {
 	private int[] rArray;
 	private int[] myArray;
@@ -12,9 +14,45 @@ public class Game {
 	public void start() {
 		setRandoms2();
 		
+		System.out.println("랜덤값");
 		for(int i : rArray) {
-			System.out.println(i);
+			System.out.print(i + ",");
 		}
+		System.out.println();
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("숫자를 입려해주세요.");
+		for(int i=0; i<myArray.length; i++) {
+			System.out.printf("숫자 %d : ", (i+1));
+			myArray[i] = scan.nextInt();
+		}
+		
+		
+		
+		check();
+		
+		scan.close();
+		
+		
+	}
+	
+	//SBO 확인용
+	public void check() {
+		int s = 0, b = 0;
+		int len = rArray.length;
+		for(int i=0; i<len; i++) {
+			for(int z=0; z<len; z++) {
+				if(rArray[i] == myArray[z]) {
+					if(i==z) {
+						s++;
+					}else {
+						b++;
+					}
+					break;
+				}
+			}
+		}		
+		System.out.printf("S:%d  B:%d  O:%d\n", s, b, (len - (s + b)));
 	}
 	
 	public void setRandoms2() {
