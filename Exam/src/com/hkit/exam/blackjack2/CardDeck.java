@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class CardDeck {
-	private List<Card> list = new LinkedList();
+	private final List<Card> list = new LinkedList();
 	
 	public CardDeck() {
 		String[] shapes = {"Spade", "Heart", "Clover", "Diamond"};		
