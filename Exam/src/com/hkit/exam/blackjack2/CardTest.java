@@ -3,7 +3,6 @@ package com.hkit.exam.blackjack2;
 import java.util.Scanner;
 
 public class CardTest {
-
 	public static void main(String[] args) {
 		CardDeck cd = new CardDeck();
 		Gamer gamer = new Gamer("Gamer");
