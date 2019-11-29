@@ -29,17 +29,8 @@ public class CardTest {
 		}
 		scan.close();
 		
-		dealer.openCards();
-		gamer.openCards();
-		
-		
-		
-		
-		
-		
-		
+		Rule.whoIsWin(gamer, dealer);
 	}
-
 }
 
 

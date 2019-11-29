@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Gamer {
-	private final String NAME;
+	public final String NAME;
 	private final List<Card> MY_CARDS = new ArrayList();
 	
 	public Gamer(String name) {
