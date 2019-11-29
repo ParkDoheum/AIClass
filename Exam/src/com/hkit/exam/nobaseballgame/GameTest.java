@@ -6,8 +6,8 @@ public class GameTest {
 			
 		if(args.length > 0) {
 			len = Utils.paseNumber(args[0], len);
-		}				
-		System.out.println("len : " + len);		
+		}			
+				
 		Game game = new Game(len);
 		game.start();
 	}
