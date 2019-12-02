@@ -17,4 +17,8 @@ public class Customer {
 		int idx = scan.nextInt();
 		return mt.pickMenuItem(idx);
 	}
+	
+	public void drink(Coffee coffe) {
+		System.out.printf("%s을(를) 마신다.", coffe.getNm());
+	}
 }
