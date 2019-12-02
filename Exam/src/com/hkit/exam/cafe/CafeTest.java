@@ -9,6 +9,10 @@ public class CafeTest {
 		Customer customer = new Customer();		
 		Barista barista = new Barista();
 		MenuItem selectedMenu = customer.chooseMenu(mt);
+		if(selectedMenu == null) {
+			System.out.println("선택을 잘 못 하셨습니다.");
+			return;
+		}
 		Coffee coffee = barista.makeCoffee(selectedMenu);
 		customer.drink(coffee);
 		/*
