@@ -18,7 +18,11 @@ public class MenuTable {
 	}
 	
 	public void showMenus() {
-		
+		for(int i=0; i<menus.size(); i++) {
+			MenuItem item = menus.get(i);
+			System.out.printf("%d. %s \t %,d원\n"
+					, (i+1), item.getNm(), item.getPrice());
+		}
 	}
 	
 }
