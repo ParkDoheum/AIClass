@@ -16,4 +16,17 @@ public class MenuItem {
 	public int getPrice() {
 		return price;
 	}
+		
+	@Override
+	public String toString() {
+		return String.format("%s \t %,d원\n", nm, price);
+	}
 }
+
+
+
+
+
+
+
+

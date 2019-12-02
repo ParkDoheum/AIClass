@@ -20,9 +20,27 @@ public class MenuTable {
 	public void showMenus() {
 		for(int i=0; i<menus.size(); i++) {
 			MenuItem item = menus.get(i);
-			System.out.printf("%d. %s \t %,d원\n"
-					, (i+1), item.getNm(), item.getPrice());
+			System.out.printf("%d. %s", (i+1), item);
 		}
 	}
 	
+	public MenuItem pickMenuItem(int idx) {
+		idx -= 1;
+		
+		if(idx < 0 || idx >= menus.size()) {
+			return null;
+		}
+		
+		return menus.get(idx);
+	}
+	
 }
+
+
+
+
+
+
+
+
+
